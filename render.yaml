@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wedding-ai-service
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: ENVIRONMENT
+        value: production
