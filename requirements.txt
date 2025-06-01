@@ -1,6 +1,46 @@
+# Production AI Wedding Video Processing Requirements
+
+# Core AI and Computer Vision
+opencv-python-headless==4.8.1.78
+torch==2.1.0
+torchvision==0.16.0
+transformers==4.35.2
+face-recognition==1.3.0
+scikit-learn==1.3.2
+numpy==1.24.3
+Pillow==10.0.1
+
+# Audio Processing
+librosa==0.10.1
+soundfile==0.12.1
+
+# Video Processing
+moviepy==1.0.3
+imageio==2.31.6
+imageio-ffmpeg==0.4.9
+
+# Web Framework
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
-opencv-python-headless==4.8.1.78
-numpy==1.24.3
 python-multipart==0.0.6
 pydantic==2.5.0
+
+# HTTP and File Handling
+requests==2.31.0
+aiofiles==23.2.0
+python-dotenv==1.0.0
+
+# Utilities
+python-json-logger==2.0.7
+psutil==5.9.6
+
+# Production deployment
+gunicorn==21.2.0
+
+# Optional: GPU acceleration (uncomment if using CUDA)
+# torch==2.1.0+cu118 -f https://download.pytorch.org/whl/cu118/torch_stable.html
+# torchvision==0.16.0+cu118 -f https://download.pytorch.org/whl/cu118/torch_stable.html
+
+# Development and debugging
+# tensorboard==2.15.1
+# matplotlib==3.8.2
